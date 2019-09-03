@@ -1,6 +1,6 @@
 class myPDO extends PDO {
 	public function __construct() {
-	  $settings = parse_ini_file('file/db_info.ini',TRUE);
+	  $settings = parse_ini_file('folder/db_info.ini',TRUE);
 	  if (!$settings) throw new exception('Can not open ini file.');
 	  $drv = $settings['database']['driver'];
 	  $hst = $settings['database']['host'];
